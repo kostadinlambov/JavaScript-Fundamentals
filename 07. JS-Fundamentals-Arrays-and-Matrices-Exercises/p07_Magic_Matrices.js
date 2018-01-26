@@ -1,19 +1,19 @@
-function magixMatrices(matrixRows = []) {
+function magicMatrix(matrixRows = []) {
     let sum = matrixRows[0].reduce((a, b) => a + b);
-    for (let row = 0; row < matrixRows[0].length; row++) {
-        let sumRows = matrixRows[row].reduce((a, b) => a + b);
-        let sumCols = 0;
-        for (let col = 0; col < matrixRows.length; col++) {
-            sumCols += matrixRows[col][row];
+    for (let row = 0; row < matrixRows.length; row++) {
+        let sumRow = matrixRows[row].reduce((a, b) => a + b);
+        let sumCol = 0;
+        for (let col = 0; col < matrixRows[0].length; col++) {
+            sumCol += matrixRows[col][row];
         }
-        if(sum !== sumRows || sum!== sumCols){
+        if (sum !== sumRow || sum !== sumCol) {
             return false
         }
     }
     return true;
 }
 
-console.log(magixMatrices([[4, 5, 6], [6, 5, 4], [5, 5, 5]]));
-console.log(magixMatrices([[11, 32, 45], [21, 0, 1], [21, 1, 1]]));
-console.log(magixMatrices([[1, 0, 0], [0, 0, 1], [0, 1, 0]]));
-console.log(magixMatrices([[0], [0], [3]]));
+console.log(magicMatrix([[4, 5, 6], [6, 5, 4], [5, 5, 5]]));
+console.log(magicMatrix([[11, 32, 45], [21, 0, 1], [21, 1, 1]]));
+console.log(magicMatrix([[1, 0, 0], [0, 0, 1], [0, 1, 0]]));
+console.log(magicMatrix([[0], [0], [3]]));
