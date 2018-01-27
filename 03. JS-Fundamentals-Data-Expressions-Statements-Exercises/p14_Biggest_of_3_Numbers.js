@@ -4,7 +4,7 @@ function biggestOf3Numbers(numbersArr) {
     let thirdNumber = numbersArr[2];
 
     let biggestNumber = Math.max(firstNumber,secondNumber, thirdNumber);
-    console.log(biggestNumber)
+    console.log(biggestNumber);
 }
 
 biggestOf3Numbers([130, 5, 99]);

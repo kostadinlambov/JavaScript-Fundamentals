@@ -20,7 +20,7 @@ function figureOf4Squares(number) {
         result += '+' + '-'.repeat(number - 2) + '+' +
             '-'.repeat(number - 2) + '+\n';
     }
-    console.log(result)
+    console.log(result);
 }
 
 figureOf4Squares(2);

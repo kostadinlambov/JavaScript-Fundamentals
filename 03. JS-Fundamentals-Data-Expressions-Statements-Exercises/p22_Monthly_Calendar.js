@@ -3,27 +3,13 @@ function calendar([day, month, year]) {
     result += '  <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>\n';
 
     let date = new Date(year, month - 1, day);
-
     let oneDay = 24 * 60 * 60 * 1000;
-
     let firstDayOfMonth = new Date(year, month - 1, 1);
-    // console.log("firstDayOfMonth: Day - " + firstDayOfMonth.getDay());
-    // console.log("firstDayOfMonth: Date - " + firstDayOfMonth.getDate());
-
     let lastDayOfLastMonth = new Date(firstDayOfMonth.getTime() - 1);
-    // console.log("lastDayOfLastMonth: Day - " + lastDayOfLastMonth.getDay());
-    // console.log("lastDayOfLastMonth: Date - " + lastDayOfLastMonth.getDate());
-
     let firstDayOfNextMonth = new Date(year, month, 1);
-
     let lastDayOfMonth = new Date(firstDayOfNextMonth.getTime() - 1);
-    // console.log("lastDayOfMonth: Day - " + lastDayOfMonth.getDay());
-    // console.log("lastDayOfMonth: Date - " + lastDayOfMonth.getDate());
-
     let firstDayOfTheWeek = new Date(firstDayOfMonth.getTime() -
         (firstDayOfMonth.getDay() ) * oneDay);
-    // console.log("firstDayOfTheWeek:  Day - " + firstDayOfTheWeek.getDay());
-    // console.log("firstDayOfTheWeek: Date - " + firstDayOfTheWeek.getDate());
 
     result += '  <tr>';
     for (let i = 0; i < firstDayOfMonth.getDay(); i++) {
@@ -43,7 +29,7 @@ function calendar([day, month, year]) {
         if (i === 6) {
             result += `</tr>\n`;
         }
-        j++
+        j++;
     }
 
     let l = 1;
@@ -77,13 +63,10 @@ function calendar([day, month, year]) {
     }
 
     let firstDayofLastWeek = new Date(year, month - 1, currentDay + 1);
-    //console.log("firstDayofLastWeek: " + firstDayofLastWeek.getDate());
-    //console.log("firstDayofLastWeek: " + firstDayofLastWeek.getDay());
 
     result += '</table>\n';
     return result;
 }
-
 
 calendar([1, 4, 2016]);
 calendar([20, 1, 2018]);

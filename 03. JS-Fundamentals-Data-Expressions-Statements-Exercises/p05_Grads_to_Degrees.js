@@ -1,4 +1,5 @@
-function gradsToDegrees(grads) {
+function gradsToDegrees([grads]) {
+    grads = Number(grads);
     let degrees = (grads * 0.9) % 360;
     if(degrees < 0){
         degrees = 360 + degrees;
@@ -6,4 +7,4 @@ function gradsToDegrees(grads) {
     console.log(degrees);
 }
 
-gradsToDegrees(850);
+gradsToDegrees(['850']);
