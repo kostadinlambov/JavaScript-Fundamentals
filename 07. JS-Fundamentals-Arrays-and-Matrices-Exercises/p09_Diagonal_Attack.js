@@ -17,7 +17,7 @@ function diagonalsSum(arr = []) {
     }
 
     if(sumMainDiagonal === sumSecondaryDiagonal){
-        let resultMatrix = fillValues(matrix, sumMainDiagonal)
+        let resultMatrix = fillValues(matrix, sumMainDiagonal);
         for(let row of resultMatrix){
             console.log(row.join(' '));
         }

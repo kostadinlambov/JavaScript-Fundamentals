@@ -14,7 +14,7 @@ function spiralMatrix(dim1, dim2) {
             let newCurrentCol = fillCurrentCol(currentCol, currentRow, numberToFill, '+');
             numberToFill += newCurrentCol -currentCol;
             currentCol = newCurrentCol;
-        } else if (currentRow + 1 < dim1&& spiralMatrix[currentRow + 1][currentCol] === 0 ) {
+        } else if (currentRow + 1 < dim1 && spiralMatrix[currentRow + 1][currentCol] === 0 ) {
             let newCurrentRow = fillCurrentRow(currentCol, currentRow, numberToFill,  '+');
             numberToFill += newCurrentRow -currentRow;
             currentRow = newCurrentRow;

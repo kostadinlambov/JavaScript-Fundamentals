@@ -1,8 +1,8 @@
 function rotateArray(arr = []) {
-    let amountOfRotations = arr.pop();
+    let amountOfRotations = Number(arr.pop());
 
     for (let i = 0; i < amountOfRotations % arr.length; i++) {
-        arr.unshift(arr.pop())
+        arr.unshift(arr.pop());
     }
     console.log(arr.join(' '));
 }

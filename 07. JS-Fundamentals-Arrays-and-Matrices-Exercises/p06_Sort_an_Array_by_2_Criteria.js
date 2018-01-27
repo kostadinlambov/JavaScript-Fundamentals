@@ -1,7 +1,7 @@
 function sortArrayBy2Criteria(arr = []) {
     arr = arr.sort((a, b) => {
         if (a.length === b.length) {
-            return (a.localeCompare(b)));
+            return (a.localeCompare(b));
         } else if (a.length >= b.length) {
             return 1;
         } else {
@@ -9,7 +9,7 @@ function sortArrayBy2Criteria(arr = []) {
         }
     });
 
-    console.log(arr.join('\n'))
+    console.log(arr.join('\n'));
 }
 
 sortArrayBy2Criteria(['Isacc', 'Theodor','Jack', 'Harrison', 'George']);

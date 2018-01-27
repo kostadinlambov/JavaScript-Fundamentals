@@ -7,7 +7,7 @@ function magicMatrix(matrixRows = []) {
             sumCol += matrixRows[col][row];
         }
         if (sum !== sumRow || sum !== sumCol) {
-            return false
+            return false;
         }
     }
     return true;

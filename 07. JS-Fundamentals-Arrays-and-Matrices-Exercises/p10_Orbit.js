@@ -6,7 +6,7 @@ function orbit(arr) {
 
     let matrix = new Array(dim2);
     for (let row = 0; row < dim2; row++) {
-        matrix[row] = new Array(dim1).fill(0)
+        matrix[row] = new Array(dim1).fill(0);
     }
     matrix[x][y] = 1;
     let numberToFill = 2;
@@ -29,15 +29,15 @@ function orbit(arr) {
     }
 
     for (let row of matrix) {
-        console.log(row.join(' '))
+        console.log(row.join(' '));
     }
 
     function fillCurrentCol(currentRow, currentCol, numberToFill, operand) {
         let startIndexRow = Math.max(0, currentRow - numberToFill + 1);
         let endIndexRow = Math.min(dim1 - 1, currentRow + numberToFill - 1);
-        fillmatrix(startIndexRow, endIndexRow);
+        fillMatrix(startIndexRow, endIndexRow);
 
-        function fillmatrix(startIndexRow, endIndexRow) {
+        function fillMatrix(startIndexRow, endIndexRow) {
             for (let i = startIndexRow; i <= endIndexRow; i++) {
 
                 if (operand === '-') {
