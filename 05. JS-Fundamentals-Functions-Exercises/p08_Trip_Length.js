@@ -17,28 +17,28 @@ function findTwoShortestSegments(arr) {
             lengthOfFirstSegment <= lengthOfThirdSegment){
             if(lengthOfSecondSegment<=lengthOfThirdSegment){
                 let distance = lengthOfFirstSegment + lengthOfSecondSegment;
-                console.log(`1->2->3: ${distance}`)
+                console.log(`1->2->3: ${distance}`);
             }else{
                 let distance = lengthOfFirstSegment + lengthOfThirdSegment;
-                console.log(`2->1->3: ${distance}`)
+                console.log(`2->1->3: ${distance}`);
             }
         }else if(lengthOfSecondSegment <= lengthOfFirstSegment &&
             lengthOfSecondSegment <= lengthOfThirdSegment) {
             if (lengthOfFirstSegment <= lengthOfThirdSegment) {
                 let distance = lengthOfFirstSegment + lengthOfSecondSegment;
-                console.log(`1->2->3: ${distance}`)
+                console.log(`1->2->3: ${distance}`);
             } else {
                 let distance = lengthOfSecondSegment + lengthOfThirdSegment;
-                console.log(`1->3->2: ${distance}`)
+                console.log(`1->3->2: ${distance}`);
             }
         }else if(lengthOfThirdSegment <= lengthOfFirstSegment &&
             lengthOfThirdSegment <= lengthOfSecondSegment) {
             if (lengthOfFirstSegment <= lengthOfSecondSegment) {
                 let distance = lengthOfFirstSegment + lengthOfThirdSegment;
-                console.log(`2->1->3: ${distance}`)
+                console.log(`2->1->3: ${distance}`);
             } else {
                 let distance = lengthOfThirdSegment + lengthOfSecondSegment;
-                console.log(`1->3->2: ${distance}`)
+                console.log(`1->3->2: ${distance}`);
             }
         }
     };

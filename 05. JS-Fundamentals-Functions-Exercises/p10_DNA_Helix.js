@@ -1,6 +1,6 @@
 function printDNAHelix(number) {
     let helix = 'ATCGTTAGGG';
-    let helicCharArr = helix.split('');
+    let helixCharArr = helix.split('');
     let result = '';
     let counter = 0;
     let indexChainMember = 0;
@@ -22,8 +22,8 @@ function printDNAHelix(number) {
 
         let indexFirstChainMember = indexChainMember;
         let indexSecondChainMember = indexChainMember + 1;
-        let firstChainMember = helicCharArr[indexFirstChainMember];
-        let secondChainMember = helicCharArr[indexSecondChainMember];
+        let firstChainMember = helixCharArr[indexFirstChainMember];
+        let secondChainMember = helixCharArr[indexSecondChainMember];
 
         switch (counter) {
             case 0:
