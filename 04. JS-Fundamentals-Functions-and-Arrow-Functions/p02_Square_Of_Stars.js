@@ -1,7 +1,8 @@
-function squareOfStars(n) {
+function squareOfStars(n = 5) {
     for (let i = 1; i <= n; i++) {
-        console.log('* '.repeat(n).trim())
+        console.log('* '.repeat(n).trim());
     }
 }
 
-squareOfStars(4)
+squareOfStars(4);
+squareOfStars();

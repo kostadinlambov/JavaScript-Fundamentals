@@ -2,6 +2,7 @@ function toUpper(str) {
     console.log(str.toUpperCase()
         .split(/\W+/)
         .filter(x => x !== '')
-        .join(', '))
+        .join(', '));
 }
-toUpper('Hi, how are you?')
+
+toUpper('Hi, how are you?');
