@@ -14,7 +14,7 @@ function diagonalSums(matrixRows) {
         }
     }
     let result = [sumMainDiagonal, sumSecondaryDiagonal];
-    console.log(result.join(' '))
+    console.log(result.join(' '));
 }
 
 diagonalSums([

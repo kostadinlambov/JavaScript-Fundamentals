@@ -1,15 +1,14 @@
 function addNumbers(arr = []) {
-    arr = arr.map(Number);
-    result = [];
+    let result = [];
 
    for(let number of arr){
        if(number>= 0){
-           result.push(number)
+           result.push(number);
        }else{
-           result.unshift(number)
+           result.unshift(number);
        }
    }
-   return result.join('\n')
+   return result.join('\n');
 }
 
 console.log(addNumbers([7, -2, 8, 9]));

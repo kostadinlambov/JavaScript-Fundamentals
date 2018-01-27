@@ -1,13 +1,23 @@
 function biggestElement(matrix) {
     let biggestElement = Number.NEGATIVE_INFINITY;
 
-    for (let row = 0; row < matrix.length; row++) {
-        let current = matrix[row];
-        let currentMaxElement = Math.max.apply(Math, current);
-        if (currentMaxElement > biggestElement) {
-            biggestElement = currentMaxElement;
+    matrix.forEach(row => {
+            row.forEach(e => {
+                if (e > biggestElement) {
+                    biggestElement = e;
+                }
+            })
         }
-    }
+    );
+
+    // for (let row = 0; row < matrix.length; row++) {
+    //     let current = matrix[row];
+    //     let currentMaxElement = Math.max.apply(Math, current);
+    //     if (currentMaxElement > biggestElement) {
+    //         biggestElement = currentMaxElement;
+    //     }
+    // }
+
     console.log(biggestElement)
 }
 

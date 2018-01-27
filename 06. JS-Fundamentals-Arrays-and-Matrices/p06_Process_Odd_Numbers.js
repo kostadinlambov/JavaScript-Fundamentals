@@ -6,5 +6,5 @@ function processNumbers(arr) {
         .join(' '));
 }
 
-processNumbers([10, 15, 20, 25])
-processNumbers([3, 0, 10, 4, 7, 3])
+processNumbers([10, 15, 20, 25]);
+processNumbers([3, 0, 10, 4, 7, 3]);

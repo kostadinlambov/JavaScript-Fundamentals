@@ -13,10 +13,9 @@ function equalNeighborsCount(matrix) {
                 }
             }
         }
-
-
     }
-    console.log(counter)
+
+    console.log(counter);
 }
 
  equalNeighborsCount([['2', '3', '4', '7', '0'],
@@ -30,20 +29,5 @@ equalNeighborsCount([['test', 'yes', 'yo', 'ho'],
     ['not', 'done', 'yet', '5']]
 
 );
-
-
-
-
-// function equalNeighborsCount(matrixRows) {
-//     let matrix = matrixRows.map(
-//         row => row.split(' '));
-//     let neighbors = 0;
-//     for (let row = 0; row < matrix.length-1; row++)
-//         for (let col = 0; col < matrix[row].length; col++)
-//             if (matrix[row][col] == matrix[row + 1][col])
-//                 neighbors++;
-//     // TODO: check also the horizontal neighbors
-//     return neighbors;
-// }
 
 
