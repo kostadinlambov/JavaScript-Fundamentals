@@ -1,5 +1,4 @@
 function extractSubsequence(arr = []) {
-
     let numberToCompare = Number.NEGATIVE_INFINITY;
     let result = [];
     for (let i = 0; i < arr.length; i++) {

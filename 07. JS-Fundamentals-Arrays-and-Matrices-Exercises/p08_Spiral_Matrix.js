@@ -9,6 +9,7 @@ function spiralMatrix(dim1, dim2) {
 
     currentRow = 0;
     currentCol = 0;
+
     while (true) {
         if (currentCol + 1 < dim2 && spiralMatrix[currentRow][currentCol+1] === 0) {
             let newCurrentCol = fillCurrentCol(currentCol, currentRow, numberToFill, '+');

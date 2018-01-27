@@ -4,4 +4,5 @@ function printArrayWithDelimiter(strArr = []) {
     console.log(result);
 }
 
+
 printArrayWithDelimiter(['One','Two','Three','Four','Five','-']);

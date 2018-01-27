@@ -1,4 +1,5 @@
 function rotateArray(arr = []) {
+
     let amountOfRotations = Number(arr.pop());
 
     for (let i = 0; i < amountOfRotations % arr.length; i++) {

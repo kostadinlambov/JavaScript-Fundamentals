@@ -39,6 +39,7 @@ function diagonalsSum(arr = []) {
         return matrix;
     }
 }
+
 // diagonalsSum([
 //     '5 3 12 3 1',
 //     '11 4 23 2 5',

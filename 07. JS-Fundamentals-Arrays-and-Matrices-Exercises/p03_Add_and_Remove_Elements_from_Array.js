@@ -1,4 +1,5 @@
 function addRemoveElements(arr = []) {
+
     let initialNumber = 1;
     let result = [];
 
