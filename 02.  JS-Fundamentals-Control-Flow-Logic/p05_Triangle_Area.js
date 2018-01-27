@@ -4,4 +4,4 @@ function triangleArea(a, b, c) {
     return area;
 }
 
-triangleArea(2, 3.5, 4)
+triangleArea(2, 3.5, 4);

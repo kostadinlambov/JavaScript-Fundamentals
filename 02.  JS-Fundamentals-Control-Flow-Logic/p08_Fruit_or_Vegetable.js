@@ -22,4 +22,4 @@ function food(word) {
     }
 }
 
-food('word')
+food('word');

@@ -3,4 +3,4 @@ function log(array) {
         console.log(Math.log2(array[index]))
     }
 }
-log([1, 2, 3, 4, 5])
+log([1, 2, 3, 4, 5]);
